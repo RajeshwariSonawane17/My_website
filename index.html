@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="logo">
+            <a href="#home"><img src="l1.jpg" alt="logo"></a>
+        </div>
+        <a class="navbar-brand" href="#">7 ALPHA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item active">  
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#whoarewe">Who Are We</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+   
+    <section class="hero-section" style="background-image: url('background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+        <div class="hero-overlay" style="background-color: rgba(0, 0, 0, 0.5); height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+            <div class="container">
+                <h1>Welcome to Our Cafe </h1>
+                <p>Experience the taste of authentic flavors and unforgettable moments.</p>
+                <a href="#menu" class="btn-hero">Explore Our Menu</a>
+            </div>
+        </div> 
+    </section>
+    
+
+    <!-- Who Are We Section -->
+    <section id="whoarewe" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Who Are We</h2>
+            <div id="whoAreWeSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="i1.jpg" class="d-block w-100" alt="Chef 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="p5.jpg" class="d-block w-100" alt="Chef 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="f3.jpg" class="d-block w-100" alt="Chef 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="u7.jpg" class="d-block w-100" alt="Chef 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Connected.jpg" class="d-block w-100" alt="Chef 5">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#whoAreWeSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#whoAreWeSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Coffee</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Pizza</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Burger</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Pasta</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Salad</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Soups</button>
+                </div>
+            </div>
+            <!-- Menu Images -->
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="Burgers Recipe.jpg" class="img-fluid animate-image" alt="Menu 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="p2.jpg" class="img-fluid animate-image" alt="Menu 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="Salad.jpg" class="img-fluid animate-image" alt="Menu 3">
+                </div>
+            </div>
+            <!-- Drink Buttons -->
+            <div class="row mt-4">
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Coffee</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Juice</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Soda</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Wine</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Beer</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-dark">Cocktail</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <img src="c1.jpg" class="img-fluid animate-image" alt="Menu 1">
+        </div>
+        <div class="col-md-4">
+            <img src="w1.jpg" class="img-fluid animate-image" alt="Menu 2">
+        </div>
+        <div class="col-md-4">
+            <img src="z1.jpg" class="img-fluid animate-image" alt="Menu 3">
+        </div>
+    </div>
+
+
+
+
+
+    
+    <!-- Events Section -->
+    <section id="events" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Events</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="e4.jpg" class="img-fluid blur-effect" alt="Event 1">
+                </div>
+                <div class="col-md-3">
+                    <img src="e2.jpg" class="img-fluid blur-effect" alt="Event 2">
+                </div>
+                <div class="col-md-3">
+                    <img src="e3.jpg" class="img-fluid blur-effect" alt="Event 3">
+                </div>
+                <div class="col-md-3">
+                    <img src="e1.jpg" class="img-fluid blur-effect" alt="Event 4">
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Contact Section -->
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="contact-us">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Whether you have a question, feedback, or just want to say hi, feel free to drop us a message.</p>
+
+            <div class="contact-info">
+                <div class="address">
+                    <h2>Our Address</h2>
+                    <p>123 Cafe Street, Coffee City, CA 12345</p>
+                </div>
+
+                <div class="phone">
+                    <h2>Call Us</h2>
+                    <p>+1 234-567-890</p>
+                </div>
+
+                <div class="email">
+                    <h2>Email Us</h2>
+                    <p>info@ourcafe.com</p>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <h2>Drop Us a Message</h2>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Our Cafe | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
+ 
+
+   
+
+    <!-- Bootstrap JS and Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

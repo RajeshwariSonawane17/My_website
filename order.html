@@ -1,0 +1,90 @@
+<!-- order.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Restaurant Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.html">Order</a></li> <!-- Link to the Order page -->
+        </ul>
+    </nav>
+
+    <!-- Order Form Section -->
+    <section class="order-section">
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <form action="submit_order.php" method="POST">
+                <!-- Personal Details Section -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <!-- Menu Selection Section -->
+                <h2>Choose Your Items</h2>
+                <div class="menu-selection">
+                    <div class="menu-item">
+                        <label for="coffee">Coffee:</label>
+                        <input type="number" id="coffee" name="coffee" min="0" value="0" step="1">
+                    </div>
+                    <div class="menu-item">
+                        <label for="pizza">Pizza:</label>
+                        <input type="number" id="pizza" name="pizza" min="0" value="0" step="1">
+                    </div>
+                    <div class="menu-item">
+                        <label for="burger">Burger:</label>
+                        <input type="number" id="burger" name="burger" min="0" value="0" step="1">
+                    </div>
+                    <div class="menu-item">
+                        <label for="pasta">Pasta:</label>
+                        <input type="number" id="pasta" name="pasta" min="0" value="0" step="1">
+                    </div>
+                    <div class="menu-item">
+                        <label for="salad">Salad:</label>
+                        <input type="number" id="salad" name="salad" min="0" value="0" step="1">
+                    </div>
+                    <div class="menu-item">
+                        <label for="soups">Soups:</label>
+                        <input type="number" id="soups" name="soups" min="0" value="0" step="1">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Place Order</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Restaurant Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
